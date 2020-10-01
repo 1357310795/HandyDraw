@@ -1,12 +1,10 @@
 ![](https://i.loli.net/2020/10/01/2C4whcJSNZAeUMY.png)
 
----
 
 *HandyDraw，在屏幕，黑板，图片，视频，甚至摄像头实时画面上留下笔迹！*
 
 # HandyDraw BlackBoard Ver.
 
----
 
 在屏幕上模拟黑板写字的小工具
 
@@ -14,7 +12,6 @@
 
 ## Why?
 
----
 
 希沃官方的“希沃白板5”和“希沃轻白板”太垃圾了，于是自己写了一个。
 
@@ -22,7 +19,6 @@
 
 ## 界面
 
----
 
 ![](https://i.loli.net/2020/10/01/NSsHUpnC59ZYAwe.png)
 
@@ -30,7 +26,6 @@
 
 ## 下载地址
 
----
 
 [Releases](https://github.com/1357310795/HandyDraw/releases)
 
@@ -38,7 +33,6 @@
 
 ## 特性
 
----
 
 - 笔画自动曲线校正，告别抖动！
 
@@ -58,7 +52,6 @@
 
 ## Todo
 
----
 
 - 撤销与重做
 - 保存矢量笔迹
@@ -69,6 +62,5 @@
 
 ## License
 
----
 
 MIT
