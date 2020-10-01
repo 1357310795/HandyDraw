@@ -1,0 +1,293 @@
+﻿<Window x:Class="MainWindow1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:telerikwpfapp1="clr-namespace:TelerikWpfApp1" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:TelerikWpfApp1"
+        Title="HandyDraw BlackBoard Ver. by Hikari✨" 
+        Height="481.507" Width="916.821" Icon="项目1.ico" 
+        WindowState="Maximized" WindowStyle="None">
+    <Window.Resources>
+        <Style x:Key="ListBoxItemStyle" TargetType="{x:Type RadioButton}" 
+         BasedOn="{StaticResource MaterialDesignToolRadioButton}">
+            <EventSetter Event="PreviewMouseUp" Handler="ListBoxItem_PreviewMouseUp"/>
+            <EventSetter Event="MouseUp" Handler="ListBoxItem_MouseUp"/>
+        </Style>
+    </Window.Resources>
+
+    <materialDesign:DialogHost x:Name="MainDialogHost1" Identifier="MainDialogHost1">
+        <materialDesign:DialogHost x:Name="MainDialogHost2" Identifier="MainDialogHost2">
+            <Grid x:Name="MainGrid">
+                <ContentControl x:Name="MainContentControl">
+                    <local:BoardView x:Name="cv" />
+                </ContentControl>
+                <Grid x:Name="GridTools"
+                      HorizontalAlignment="Center" VerticalAlignment="Bottom"
+                      Margin="172,0,173,15" RenderTransformOrigin="0.5,0.5" Height="50">
+                    <materialDesign:Card UniformCornerRadius="3" Padding="0">
+                        <StackPanel x:Name="listboxTools"  
+                                    HorizontalAlignment="Center"
+                                    Orientation="Horizontal" Margin="0" RenderTransformOrigin="0.5,0.5">
+                            <StackPanel.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform Y="0"/>
+                                </TransformGroup>
+                            </StackPanel.RenderTransform>
+                            <RadioButton Style="{StaticResource ListBoxItemStyle}"
+                                         IsChecked="False" Tag="Cursor"
+                                         GroupName="Tools" Checked="Cursor_Selected">
+                                <Grid Margin="0,2,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                                             Kind="CursorDefault" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="移动" Margin="0,5,0,0"/>
+                                </Grid>
+                            </RadioButton>
+                            <RadioButton Style="{StaticResource ListBoxItemStyle}"
+                                         IsChecked="True" Tag="Pen"
+                                         GroupName="Tools" Checked="Pen_Selected">
+                                <Grid Margin="0,2,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="LeadPencil" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="标注" Margin="0,5,0,0"/>
+                                    <materialDesign:PopupBox x:Name="PenSettingPopup" 
+                                                             StaysOpen="True" 
+                                                             IsEnabled="True" 
+                                                             Grid.RowSpan="2" 
+                                                             PlacementMode="TopAndAlignLeftEdges" 
+                                                             PopupHorizontalOffset="-5" 
+                                                             PopupVerticalOffset="40" 
+                                                             Foreground="{x:Null}">
+                                        <materialDesign:PopupBox.ToggleContent>
+                                            <x:Null/>
+                                        </materialDesign:PopupBox.ToggleContent>
+                                        <local:PenSettingMenu x:Name="PenSetting"/>
+                                    </materialDesign:PopupBox>
+                                </Grid>
+                            </RadioButton>
+                            <RadioButton Style="{StaticResource ListBoxItemStyle}"
+                                         IsChecked="False" Tag="Marker"
+                                         GroupName="Tools" Checked="Marker_Selected">
+                                <Grid Margin="0,2,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Marker" VerticalAlignment="Center" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="荧光笔" Margin="0,5,0,0"/>
+                                    <materialDesign:PopupBox x:Name="MarkerSettingPopup" 
+                                                             StaysOpen="True" 
+                                                             IsEnabled="True" 
+                                                             Grid.RowSpan="2" 
+                                                             PlacementMode="TopAndAlignLeftEdges" 
+                                                             PopupHorizontalOffset="-5" 
+                                                             PopupVerticalOffset="40" 
+                                                             Foreground="{x:Null}">
+                                        <materialDesign:PopupBox.ToggleContent>
+                                            <x:Null/>
+                                        </materialDesign:PopupBox.ToggleContent>
+                                        <local:MarkerSettingMenu x:Name="MarkerSetting"/>
+                                    </materialDesign:PopupBox>
+                                </Grid>
+                            </RadioButton>
+                            <RadioButton Style="{StaticResource ListBoxItemStyle}"
+                                         IsChecked="False" Tag="Eraser"
+                                         GroupName="Tools" Checked="Eraser_Selected">
+                                <Grid Margin="0,2,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Eraser" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="擦除" Margin="0,5,0,0"/>
+                                    <materialDesign:PopupBox x:Name="EraserSettingPopup" 
+                                                             StaysOpen="True" 
+                                                             IsEnabled="True" 
+                                                             Grid.RowSpan="2" 
+                                                             PlacementMode="TopAndAlignLeftEdges" 
+                                                             PopupHorizontalOffset="-5" 
+                                                             PopupVerticalOffset="40" 
+                                                             Foreground="{x:Null}">
+                                        <materialDesign:PopupBox.ToggleContent>
+                                            <x:Null/>
+                                        </materialDesign:PopupBox.ToggleContent>
+                                        <local:EraserSettingMenu x:Name="EraserSetting"/>
+                                    </materialDesign:PopupBox>
+                                </Grid>
+                            </RadioButton>
+                            <RadioButton Style="{StaticResource ListBoxItemStyle}"
+                                         IsChecked="False" Tag="Save"
+                                         GroupName="Save" PreviewMouseDown="Save_MouseDown" PreviewMouseUp="Save_MouseUp"
+                                         Checked="Save_checked">
+                                <Grid Margin="0,2,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="ContentSave" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="保存截图" Margin="0,5,0,0"/>
+                                    <materialDesign:PopupBox x:Name="SaveSettingPopup" 
+                                                             StaysOpen="True" 
+                                                             IsEnabled="True" 
+                                                             Grid.RowSpan="2" 
+                                                             PlacementMode="TopAndAlignLeftEdges" 
+                                                             PopupHorizontalOffset="-5" 
+                                                             PopupVerticalOffset="40" 
+                                                             Foreground="{x:Null}">
+                                        <materialDesign:PopupBox.ToggleContent>
+                                            <x:Null/>
+                                        </materialDesign:PopupBox.ToggleContent>
+                                        <local:SaveSettingMenu x:Name="SaveSetting"/>
+                                    </materialDesign:PopupBox>
+                                </Grid>
+                            </RadioButton>
+                            <RadioButton Style="{StaticResource ListBoxItemStyle}"
+                                         IsChecked="False" Tag="Setting"
+                                         GroupName="Setting"
+                                         Checked="Setting_Selected">
+                                <Grid Margin="0,2,0,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Kind="Build" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="设置" Margin="0,5,0,0"/>
+                                    <materialDesign:PopupBox x:Name="SettingPopup" 
+                                                             StaysOpen="True" 
+                                                             IsEnabled="True" 
+                                                             Grid.RowSpan="2" 
+                                                             PlacementMode="TopAndAlignLeftEdges" 
+                                                             PopupHorizontalOffset="-5" 
+                                                             PopupVerticalOffset="40" 
+                                                             Foreground="{x:Null}">
+                                        <materialDesign:PopupBox.ToggleContent>
+                                            <x:Null/>
+                                        </materialDesign:PopupBox.ToggleContent>
+                                        <local:SettingMenu/>
+                                    </materialDesign:PopupBox>
+                                </Grid>
+                            </RadioButton>
+                        </StackPanel>
+                    </materialDesign:Card>
+                    <Grid x:Name="MenuGrid" Height="Auto" HorizontalAlignment="Left" VerticalAlignment="Top" Width="{Binding ActualWidth, ElementName=listboxTools, Mode=OneWay}" >
+
+                    </Grid>
+                </Grid>
+                <StackPanel x:Name="NotiStackPanel" Width="Auto" Height="Auto" 
+                            VerticalAlignment="Top" HorizontalAlignment="Right"
+                            Margin="0,5,5,0" Grid.Column="1">
+                </StackPanel>
+                <Grid x:Name="GridLeft"
+                      HorizontalAlignment="Left" VerticalAlignment="Bottom"
+                      Margin="15,0,0,15" RenderTransformOrigin="0.5,0.5" Height="50">
+                    <materialDesign:Card UniformCornerRadius="3" Padding="0">
+                        <StackPanel x:Name="listboxLeft"  
+                                    HorizontalAlignment="Center"
+                                    Orientation="Horizontal" Margin="0" RenderTransformOrigin="0.5,0.5">
+                            <StackPanel.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform Y="0"/>
+                                </TransformGroup>
+                            </StackPanel.RenderTransform>
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Height="50" Click="ButtonExit_Click">
+                                <Grid Margin="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                                             Kind="WindowClose" Width="24" Height="24" Foreground="Black" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="退出" Margin="0,5,0,0" Foreground="Black"/>
+                                </Grid>
+                            </Button>
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Height="50" Click="ButtonMini_Click">
+                                <Grid Margin="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                                             Kind="WindowMinimize" Width="24" Height="24" Foreground="Black" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="最小化" Margin="0,5,0,0" Foreground="Black"/>
+                                </Grid>
+                            </Button>
+                        </StackPanel>
+                    </materialDesign:Card>
+                </Grid>
+                <Grid x:Name="GridRight"
+                      HorizontalAlignment="Right" VerticalAlignment="Bottom"
+                      Margin="15,0,15,15" RenderTransformOrigin="0.5,0.5" Height="50">
+                    <materialDesign:Card UniformCornerRadius="3" Padding="0">
+                        <StackPanel x:Name="listboxRight"  
+                                    HorizontalAlignment="Center"
+                                    Orientation="Horizontal" Margin="0" RenderTransformOrigin="0.5,0.5">
+                            <StackPanel.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform/>
+                                    <TranslateTransform Y="0"/>
+                                </TransformGroup>
+                            </StackPanel.RenderTransform>
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Height="50" Click="ButtonPre_Click">
+                                <Grid Margin="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                                             Kind="KeyboardArrowLeft" Width="24" Height="24" Foreground="Black" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="上一页" Margin="0,5,0,0" Foreground="Black"/>
+                                </Grid>
+                            </Button>
+                            <Grid Margin="5,0,5,-1">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition/>
+                                    <RowDefinition/>
+                                </Grid.RowDefinitions>
+                                <TextBlock x:Name="TextPage"
+                                           HorizontalAlignment="Center" Grid.Row="0" 
+                                           Text="1/1" Margin="0,5,0,0" Foreground="Black" FontSize="16"/>
+                                <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="页码" Margin="0,5,0,0" Foreground="Black"/>
+                            </Grid>
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Height="50" Click="ButtonNext_Click">
+                                <Grid Margin="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                                             Kind="KeyboardArrowRight" Width="24" Height="24" Foreground="Black" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="下一页" Margin="0,5,0,0" Foreground="Black"/>
+                                </Grid>
+                            </Button>
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Height="50" Click="ButtonAdd_Click">
+                                <Grid Margin="0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition/>
+                                        <RowDefinition/>
+                                    </Grid.RowDefinitions>
+                                    <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                                             Kind="Add" Width="24" Height="24" Foreground="Black" />
+                                    <TextBlock HorizontalAlignment="Center" Grid.Row="1" Text="加页" Margin="0,5,0,0" Foreground="Black"/>
+                                </Grid>
+                            </Button>
+                        </StackPanel>
+                    </materialDesign:Card>
+                </Grid>
+            </Grid>
+        </materialDesign:DialogHost>
+    </materialDesign:DialogHost>
+</Window>

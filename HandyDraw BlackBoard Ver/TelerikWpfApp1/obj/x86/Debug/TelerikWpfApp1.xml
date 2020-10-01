@@ -1,0 +1,223 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+TelerikWpfApp1
+</name>
+</assembly>
+<members>
+<member name="T:TelerikWpfApp1.My.MyWpfExtension">
+ <summary>
+ Module used to define the properties that are available in the My Namespace for WPF
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:TelerikWpfApp1.My.MyWpfExtension.Application">
+ <summary>
+ Returns the application object for the running application
+ </summary>
+</member>
+<member name="P:TelerikWpfApp1.My.MyWpfExtension.Computer">
+ <summary>
+ Returns information about the host computer.
+ </summary>
+</member>
+<member name="P:TelerikWpfApp1.My.MyWpfExtension.User">
+ <summary>
+ Returns information for the current user.  If you wish to run the application with the current 
+ Windows user credentials, call My.User.InitializeWithWindowsUser().
+ </summary>
+</member>
+<member name="P:TelerikWpfApp1.My.MyWpfExtension.Log">
+ <summary>
+ Returns the application log. The listeners can be configured by the application's configuration file.
+ </summary>
+</member>
+<member name="P:TelerikWpfApp1.My.MyWpfExtension.Windows">
+ <summary>
+ Returns the collection of Windows defined in the project.
+ </summary>
+</member>
+<member name="T:TelerikWpfApp1.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:TelerikWpfApp1.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:TelerikWpfApp1.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.MainWindow1">
+<summary>
+MainWindow1
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.MainWindow1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.SaveDialog">
+<summary>
+SaveDialog
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.SaveDialog.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.SaveNoti1">
+<summary>
+SaveNoti1
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.SaveNoti1.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.CursorSettingMenu">
+<summary>
+CursorSettingMenu
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.CursorSettingMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.SettingMenu">
+<summary>
+SettingMenu
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.SettingMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.EraserSettingMenu">
+<summary>
+EraserSettingMenu
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.EraserSettingMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.MarkerSettingMenu">
+<summary>
+MarkerSettingMenu
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.MarkerSettingMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.PenSettingMenu">
+<summary>
+PenSettingMenu
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.PenSettingMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.SaveSettingMenu">
+<summary>
+SaveSettingMenu
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.SaveSettingMenu.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.BoardView">
+<summary>
+BoardView
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.BoardView.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.SplashScreenWindow">
+<summary>
+SplashScreenWindow
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.SplashScreenWindow.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.YesNoDialog">
+<summary>
+YesNoDialog
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.YesNoDialog.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.Application">
+<summary>
+Application
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.Application.InitializeComponent">
+<summary>
+InitializeComponent
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.Application.Main">
+<summary>
+Application Entry Point.
+</summary>
+</member>
+<member name="T:TelerikWpfApp1.XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+<summary>
+GeneratedInternalTypeHelper
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+<summary>
+CreateInstance
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+<summary>
+GetPropertyValue
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+<summary>
+SetPropertyValue
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+<summary>
+CreateDelegate
+</summary>
+</member>
+<member name="M:TelerikWpfApp1.XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+<summary>
+AddEventHandler
+</summary>
+</member>
+</members>
+</doc>

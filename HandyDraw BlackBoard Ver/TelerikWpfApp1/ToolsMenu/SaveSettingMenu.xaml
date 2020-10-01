@@ -1,0 +1,35 @@
+﻿<UserControl x:Class="SaveSettingMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:controls="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+             mc:Ignorable="d" Height="Auto" Width="Auto" Background="White">
+    <StackPanel>
+        <materialDesign:Card
+                Grid.Row="0"
+                Background="{DynamicResource PrimaryHueMidBrush}"
+                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                Width="100" Height="40"
+                UniformCornerRadius="6"  
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="10,0,0,0"
+                materialDesign:ShadowAssist.ShadowDepth="Depth3" FontSize="20">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Microsoft YaHei UI Light">
+                        保存选项
+            </TextBlock>
+        </materialDesign:Card>
+        <StackPanel Orientation="Horizontal" Margin="10,10,5,5">
+            <CheckBox x:Name="Quickmodebutton" Content="快速模式" FontSize="20"/>
+            <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}"
+                    HorizontalAlignment="Center" Margin="20,0,0,0" Click="Button_Click" Width="32" Height="32">
+                <materialDesign:PackIcon Kind="DotsVertical" 
+                                         Width="30" Height="30"
+                                         HorizontalAlignment="Center" 
+                                         VerticalAlignment="Center" Foreground="White"/>
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,151 @@
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbprojAssemblyReference.cache
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\SaveDialog.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\SaveNoti1.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\CursorSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\EraserSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\MarkerSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\PenSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SaveSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\YesNoDialog.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\Application.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\MainWindow.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\SaveDialog.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\SaveNoti1.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\CursorSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\EraserSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\MarkerSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\PenSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SaveSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\YesNoDialog.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\Application.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1_MarkupCompile.cache
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1_MarkupCompile.lref
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.exe.config
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.exe
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignColors.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignExtensions.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MediaFoundation.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\SharpDX.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Controls.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Controls.Media.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Controls.Navigation.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Data.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.MediaFoundation.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignColors.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignExtensions.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Controls.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Controls.Media.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Controls.Navigation.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.Data.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Telerik.Windows.MediaFoundation.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\ar-DZ\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\cs\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\cs-CZ\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\de\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\fr\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\fr-FR\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\pt\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\pt-BR\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\Ru\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\ru-ru\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\uz-Latn-UZ\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\de\Telerik.Windows.Controls.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\es\Telerik.Windows.Controls.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\fr\Telerik.Windows.Controls.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\it\Telerik.Windows.Controls.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\nl\Telerik.Windows.Controls.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\bin\Debug\tr\Telerik.Windows.Controls.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\MainWindow.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.g.resources
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.Resources.resources
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbproj.GenerateResource.cache
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.exe.licenses
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbproj.CoreCompileInputs.cache
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbproj.CopyComplete
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.exe
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.xml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\CamView.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\CamView.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\PicView.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\NewPageView.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\PicView.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\NewPageView.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\SplashScreenWindow.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\SplashScreenWindow.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\BoardView.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\View\BoardView.baml
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\MainWindow1.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1\TelerikWpfApp1\obj\x86\Debug\MainWindow1.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbprojAssemblyReference.cache
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\SaveDialog.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\SaveNoti1.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\CursorSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\EraserSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\MarkerSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\PenSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SaveSettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\SplashScreenWindow.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\YesNoDialog.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\Application.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\MainWindow1.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\SaveDialog.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\SaveNoti1.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\CursorSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\EraserSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\MarkerSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\PenSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SaveSettingMenu.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\View\BoardView.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\SplashScreenWindow.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\YesNoDialog.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\Application.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\GeneratedInternalTypeHelper.g.vb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1_MarkupCompile.cache
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1_MarkupCompile.lref
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.exe
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.xml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\MainWindow1.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\View\BoardView.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.g.resources
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.Resources.resources
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbproj.GenerateResource.cache
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.exe.config
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.exe
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\TelerikWpfApp1.xml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignColors.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignExtensions.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MediaFoundation.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\SharpDX.Direct3D9.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\SharpDX.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignColors.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignExtensions.xml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\ar-DZ\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\cs\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\cs-CZ\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\de\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\fr\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\fr-FR\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\pt\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\pt-BR\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\Ru\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\ru-ru\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\bin\Debug\uz-Latn-UZ\MaterialDesignExtensions.resources.dll
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbproj.CoreCompileInputs.cache
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\TelerikWpfApp1.vbproj.CopyComplete
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SettingMenu.baml
+C:\Users\13573\source\repos\TelerikWpfApp1 - 副本\TelerikWpfApp1\obj\x86\Debug\ToolsMenu\SettingMenu.g.vb

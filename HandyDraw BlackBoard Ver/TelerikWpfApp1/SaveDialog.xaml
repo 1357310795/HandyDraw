@@ -1,0 +1,91 @@
+﻿<UserControl x:Class="SaveDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:mde="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+             mc:Ignorable="d" Background="White" Height="Auto" Width="Auto">
+    <materialDesign:DialogHost x:Name="DialogHost1" Identifier="DialogHost1">
+        <materialDesign:Transitioner Name="Transitioner" SelectedIndex="0">
+            <StackPanel x:Name="MainStackPanel" Orientation ="Vertical" Margin="5" MaxWidth="400">
+                <TextBlock Text="保存内容" Margin="10,5,0,0" FontSize="20" />
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <RadioButton x:Name="rb1" Tag="0"
+                                 Style="{StaticResource MaterialDesignRadioButton}" 
+                                 Margin="5" Checked="Save_content_rb_Checked">
+                        仅墨迹
+                    </RadioButton>
+                    <RadioButton x:Name="rb2"  Tag="1"
+                                 Style="{StaticResource MaterialDesignRadioButton}" 
+                                 Margin="5" Checked="Save_content_rb_Checked">
+                        仅背景
+                    </RadioButton>
+                    <RadioButton x:Name="rb3"  Tag="2"
+                                 Style="{StaticResource MaterialDesignRadioButton}" 
+                                 Margin="5" Checked="Save_content_rb_Checked" IsChecked="True">
+                        背景和墨迹
+                    </RadioButton>
+                </StackPanel>
+                <Border BorderThickness="0,1,0,0" Margin="10,0,10,5"
+                        BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                <TextBlock Text="保存截图大小" Margin="10,0,0,0" FontSize="20" />
+                <WrapPanel Orientation="Horizontal" FlowDirection="LeftToRight" Margin="5">
+                    <RadioButton x:Name="RadioButton1" Checked="RadioButton_Checked" Tag="0"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5" IsChecked="True">
+                        原始大小（当前值：xxxxx）
+                    </RadioButton>
+                    <RadioButton x:Name="RadioButton2" Checked="RadioButton_Checked" Tag="1"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5">
+                        缩放后大小（当前值：xxxxx）
+                    </RadioButton>
+                    <RadioButton x:Name="RadioButton3" Checked="RadioButton_Checked" Tag="2"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5">
+                        缩放后大小的一半（当前值：xxxxx）
+                    </RadioButton>
+                    <RadioButton x:Name="RadioButton4" Checked="RadioButton_Checked" Tag="3"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5">
+                        宽度为3840（当前值：xxxxx）
+                    </RadioButton>
+                    <RadioButton x:Name="RadioButton5" Checked="RadioButton_Checked" Tag="4"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5">
+                        高度为2160（当前值：xxxxx）
+                    </RadioButton>
+                    <RadioButton x:Name="RadioButton6" Checked="RadioButton_Checked" Tag="5"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5">
+                        宽度为1920（当前值：xxxxx）
+                    </RadioButton>
+                    <RadioButton x:Name="RadioButton7" Checked="RadioButton_Checked" Tag="6"
+                                 Style="{StaticResource MaterialDesignRadioButton}" Margin="5">
+                        高度为1080（当前值：xxxxx）
+                    </RadioButton>
+                </WrapPanel>
+                <Border BorderThickness="0,1,0,0" Margin="10,0,10,5"
+                        BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                <StackPanel Orientation="Horizontal" Margin="10,0">
+                    <TextBlock Text="保存位置" FontSize="20" VerticalAlignment="Center" />
+                    <Button Style="{StaticResource MaterialDesignOutlinedButton}" Width="200" HorizontalAlignment="Left" Margin="10,0,0,0" Click="Button_Click">
+                        选择文件夹
+                    </Button>
+                </StackPanel>
+                <TextBlock x:Name="pathlabel" Text="C:\1.png" Margin="10" ToolTip=""/>
+                <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" Margin="5,5,5,0">
+                    <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                            Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                            Content="确定" FontSize="16" Margin="5"
+                            CommandParameter="OK" Click="Button_Click_1"/>
+                    <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                            Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                            Content="取消" FontSize="16" Margin="5"
+                            IsCancel="True" CommandParameter="Cancel"/>
+                </StackPanel>
+            </StackPanel>
+            <mde:OpenDirectoryControl ShowHiddenFilesAndDirectories="False"
+                                      ShowSystemFilesAndDirectories="False"
+                                      CreateNewDirectoryEnabled="True"
+                                      Visibility="Visible"
+                                      Height="402"
+                                      Width="396"/>
+        </materialDesign:Transitioner>
+    </materialDesign:DialogHost>
+</UserControl>
