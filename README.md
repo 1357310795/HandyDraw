@@ -1,4 +1,4 @@
-![](https://i.loli.net/2020/10/01/2C4whcJSNZAeUMY.png)
+![](HandyDraw.png)
 
 
 *HandyDraw，在屏幕，黑板，图片，视频，甚至摄像头实时画面上留下笔迹！*
@@ -19,8 +19,7 @@
 
 ## 界面
 
-
-![](https://i.loli.net/2020/10/01/NSsHUpnC59ZYAwe.png)
+![Snipaste_2020-10-01_21-38-37](Snipaste_2020-10-01_21-38-37.png)
 
 
 
