@@ -16,6 +16,8 @@
 
 ![](https://i.loli.net/2021/02/13/3sOxjWMRefUpw4G.png)
 
+![](https://i.loli.net/2021/02/13/lxUC3dHA81fDPJI.png)
+
 ## 下载地址
 
 [Releases](https://github.com/1357310795/HandyDraw/releases)
