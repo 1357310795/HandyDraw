@@ -1,0 +1,51 @@
+﻿<Window x:Class="AboutWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:local="clr-namespace:TelerikWpfApp1"
+             ShowInTaskbar="True" Topmost="True" ShowActivated="True" Focusable="True"
+             WindowStyle="None" ResizeMode="NoResize"
+             WindowStartupLocation="CenterScreen"
+             mc:Ignorable="d" Background="{x:Null}" Height="437" Width="777" Closed="Window_Closed" Loaded="Window_Loaded">
+    <WindowChrome.WindowChrome>
+        <WindowChrome GlassFrameThickness="-1" />
+    </WindowChrome.WindowChrome>
+    <local:DpiDecorator>
+        <materialDesign:Card UniformCornerRadius="5" 
+                             materialDesign:ShadowAssist.ShadowDepth="Depth3" 
+                             Margin="10" RenderTransformOrigin="0.5,0.5">
+            <materialDesign:Card.RenderTransform>
+                <ScaleTransform x:Name="MyScaleTransform"
+                                ScaleX="1"
+                                ScaleY="{Binding RelativeSource={RelativeSource Self},Path=ScaleX}"></ScaleTransform>
+            </materialDesign:Card.RenderTransform>
+            <Grid>
+                <StackPanel x:Name="MainStackPanel" Orientation ="Vertical" Margin="5" MaxWidth="1000" >
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <materialDesign:PackIcon Kind="InfoCircleOutline" Width="32" Height="32" Margin="5,0" />
+                        <TextBlock Text="关于" VerticalAlignment="Center" FontSize="20" Margin="0"/>
+                    </StackPanel>
+                    <Border BorderThickness="0,1,0,0" Margin="10,0"
+                            BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                    <Image Source="/TelerikWpfApp1;component/Resources/HandyDrawPPTHelper1.png"/>
+                    <Border BorderThickness="0,1,0,0" Margin="10,0"
+                            BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                    <TextBlock Text="软件官网（欢迎反馈&amp;改进意见）：https://github.com/1357310795/HandyDraw" 
+                               FontSize="18" Foreground="#FFFF5870" 
+                               Margin="30,10,0,0" MouseDown="TextBlock_MouseDown"/>
+                    <TextBlock Text="开发者Bilibili主页：https://space.bilibili.com/171443036" 
+                               FontSize="18" Foreground="#FFFF5870" 
+                               Margin="30,10,0,0" MouseDown="TextBlock_MouseDown_1"/>
+                    <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" Margin="5">
+                        <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                                Content="确定" FontSize="16" Margin="5" Click="Button_Click"/>
+                    </StackPanel>
+                </StackPanel>
+                <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" 
+                                         x:Name="Snackbar1" />
+            </Grid>
+        </materialDesign:Card>
+    </local:DpiDecorator>
+</Window>

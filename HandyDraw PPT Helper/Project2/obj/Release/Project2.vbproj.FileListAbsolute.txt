@@ -1,0 +1,7 @@
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\bin\Release\Project2.exe.config
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\bin\Release\Project2.exe
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\bin\Release\Project2.pdb
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\obj\Release\Project2.vbprojAssemblyReference.cache
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\obj\Release\Project2.vbproj.CoreCompileInputs.cache
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\obj\Release\Project2.exe
+C:\Users\13573\Source\Repos\ppthelper11.28\Project2\obj\Release\Project2.pdb

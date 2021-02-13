@@ -1,0 +1,29 @@
+﻿<UserControl x:Class="BoardView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TelerikWpfApp1" xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Height="Auto" Width="Auto" d:DesignWidth="800" d:DesignHeight="800">
+    <Canvas x:Name="Canvas1">
+        <Grid x:Name="Grid1" Canvas.Left="0" Canvas.Top="0">
+            <Grid.LayoutTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1"/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.LayoutTransform>
+            <Grid x:Name="MyBackControl" Height="{Binding ElementName=Canvas1,Path=ActualHeight}" Width="{Binding ElementName=Canvas1,Path=ActualWidth}" Background="White"/>
+            <InkCanvas x:Name="InkCanvas1" 
+                       Visibility="Visible" 
+                       Background="#008B8B8B" 
+                       Height="{Binding ElementName=MyBackControl,Path=ActualHeight,Mode=OneWay}"
+                       Width="{Binding ElementName=MyBackControl,Path=ActualWidth,Mode=OneWay}" 
+                       IsHitTestVisible="true" RenderTransformOrigin="0.5,0.5" IsManipulationEnabled="False">
+            </InkCanvas>
+
+        </Grid>
+    </Canvas>
+</UserControl>

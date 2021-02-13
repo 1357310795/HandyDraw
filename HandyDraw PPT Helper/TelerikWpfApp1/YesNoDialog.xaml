@@ -1,0 +1,38 @@
+﻿<UserControl x:Class="YesNoDialog"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Background="White" Height="Auto" Width="Auto">
+    <StackPanel x:Name="MainStackPanel" Orientation ="Vertical" Margin="5" MaxWidth="500">
+        <StackPanel Orientation="Horizontal" Margin="5">
+            <materialDesign:PackIcon Kind="InfoCircleOutline" Width="32" Height="32" Margin="5,0" />
+            <TextBlock Text="提示" VerticalAlignment="Center" FontSize="20" Margin="0"/>
+        </StackPanel>
+        <Border BorderThickness="0,1,0,0" Margin="10,0"
+                BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+        <TextBlock x:Name="MainTextBlock" FontSize="20" Margin="10,5,10,0" TextWrapping="Wrap">
+            Lorem ipsum dolor sit amet, 
+            consectetur adipisicing elit, 
+            sed do eiusmod tempor incididunt ut 
+            labore et dolore magna aliqua. Ut enim ad minim ve
+            niam, quis nostrud exercitation ullamco laboris nisi 
+            ut aliquip ex ea commodo consequat. Duis aute iru
+            re dolor in reprehenderit in voluptate velit esse cillu
+            m dolore eu fugiat nulla pariatur. Excepteur sint occaec
+            at cupidatat non proident, sunt in culpa qui officia des
+            erunt mollit anim id est laborum.
+        </TextBlock>
+        <StackPanel Orientation="Horizontal" FlowDirection="RightToLeft" Margin="5">
+            <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                    Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                    Content="确定" FontSize="16" Margin="5"
+                    CommandParameter="OK"/>
+            <Button Style="{StaticResource MaterialDesignFlatButton}" 
+                    Command="{x:Static materialDesign:DialogHost.CloseDialogCommand}"
+                    Content="取消" FontSize="16" Margin="5"
+                    IsCancel="True" CommandParameter="Cancel"/>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

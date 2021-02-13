@@ -1,0 +1,243 @@
+﻿<UserControl x:Class="MarkerSettingMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:controls="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+             mc:Ignorable="d" Height="407" Width="402" Background="White">
+    <StackPanel>
+        <materialDesign:Card
+                Grid.Row="0"
+                Background="{DynamicResource PrimaryHueMidBrush}"
+                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                Width="120" Height="40"
+                UniformCornerRadius="6"  
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="10,0,0,0"
+                materialDesign:ShadowAssist.ShadowDepth="Depth3" FontSize="20">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Microsoft YaHei UI Light">
+                        荧光笔设置
+            </TextBlock>
+        </materialDesign:Card>
+        <TextBlock Text="笔尖" Margin="15,10,10,0" FontSize="20"/>
+        <StackPanel Orientation="Horizontal" Margin="15,0">
+            <Grid Width="50" Height="50" Margin="2">
+                <Rectangle
+                            x:Name="StylusSizeRectangle"
+                            Fill="Black" 
+                            Width="{Binding Value, ElementName=StylusWidthSlider}" 
+                            Height="{Binding Value, ElementName=StylusHeightSlider}" 
+                            />
+            </Grid>
+            <StackPanel Orientation="Vertical">
+                <StackPanel Orientation="Horizontal" Margin="0,5,0,0">
+                    <TextBlock 
+                        x:Name="StylusHeightText"
+                        Text="{Binding Value, ElementName=StylusHeightSlider}" Margin="5" VerticalAlignment="Center" Width="14"/>
+                    <Slider
+                        x:Name="StylusHeightSlider"
+                        Orientation="Horizontal"
+                        Minimum="1"
+                        Maximum="50"
+                        Value="25" 
+                        Width="190" 
+                        Margin="5"
+                        VerticalAlignment="Center" IsSnapToTickEnabled="True" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0,0,0,5">
+                    <TextBlock 
+                        x:Name="StylusWidthText"
+                        Text="{Binding Value, ElementName=StylusWidthSlider}" Margin="5" VerticalAlignment="Center" Width="14"/>
+                    <Slider
+                        x:Name="StylusWidthSlider"
+                        Orientation="Horizontal"
+                        Minimum="1"
+                        Maximum="50"
+                        Value="10" 
+                        Width="190" 
+                        Margin="5"
+                        VerticalAlignment="Center" IsSnapToTickEnabled="True" />
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+        <TextBlock Text="颜色" Margin="15,0,10,10" FontSize="20"/>
+        <StackPanel Orientation="Vertical">
+            <Grid>
+                <InkCanvas x:Name="inkCanvas" Width="20" Height="10">
+                    <InkCanvas.DefaultDrawingAttributes>
+                        <DrawingAttributes x:Name="cs" Color="#FFB83B3B" FitToCurve="False" Height="2.0031496062992127" IgnorePressure="False" IsHighlighter="False" StylusTip="Ellipse" StylusTipTransform="Identity" Width="2.0031496062992127"/>
+                    </InkCanvas.DefaultDrawingAttributes>
+                </InkCanvas>
+                <Rectangle x:Name="ColorRectangle"
+                               Width="363" Height="25" 
+                               HorizontalAlignment="Center" 
+                               Stroke="{DynamicResource SecondaryAccentBrush}" Margin="18,0,21,0"/>
+                <TextBlock Text="当前颜色" 
+                               Foreground="White" 
+                               HorizontalAlignment="Center" 
+                               VerticalAlignment="Center"
+                               Margin="5"/>
+            </Grid>
+            <TabControl x:Name="ColorTabControl"
+                            RenderTransformOrigin="0.5,0" Width="450"  Height="Auto"
+                            HorizontalAlignment="Center" FontSize="20">
+                <TabControl.Style>
+                    <Style TargetType="TabControl" BasedOn="{StaticResource MaterialDesignTabControl}">
+                    </Style>
+                </TabControl.Style>
+                <TabControl.LayoutTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="0.8" ScaleX="0.8"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </TabControl.LayoutTransform>
+                <TabItem Header="MD标准色" FontSize="12" RenderTransformOrigin="0.5,0.5">
+                    <WrapPanel Orientation="Horizontal" Margin="10">
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="Black" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="White" BorderBrush="{x:Null}">
+                        </Button>
+
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF9E9E9E" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF567D8B" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF795648" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFFF9800" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFFFC107" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFF44336" BorderBrush="{x:Null}">
+                        </Button>
+
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFFF5722" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFE91E63" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF9C27B0" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF673AB7" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF3F51B5" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFFFEB3B" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF03A9F4" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF2196F3" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF00BCD4" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF4CAF56" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF8BC34A" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FFCDDC39" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="56" Height="56" Margin="2" Background="#FF009688" BorderBrush="{x:Null}">
+                        </Button>
+                    </WrapPanel>
+                </TabItem>
+                <TabItem Header="MSOffice标准色" FontSize="8">
+                    <WrapPanel Orientation="Horizontal" Margin="10">
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="Black" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="White" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#ff0000" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FFFFC000" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="Yellow" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FF92D036" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FF00B036" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FF00B0F0" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FF0070C0" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FF002036" BorderBrush="{x:Null}">
+                        </Button>
+                        <Button
+                                Style="{StaticResource MaterialDesignRaisedDarkButton}"
+                                Width="36" Height="36" Margin="1" Background="#FF7036A0" BorderBrush="{x:Null}">
+                        </Button>
+                    </WrapPanel>
+                </TabItem>
+                <TabItem Header="中国传统色" FontSize="8">
+                    <WrapPanel Orientation="Horizontal" Margin="10">
+                    </WrapPanel>
+                </TabItem>
+            </TabControl>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="SaveNoti1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Background="Transparent" Height="98" MaxWidth="279" Margin="5">
+    <materialDesign:Card UniformCornerRadius="5" materialDesign:ShadowAssist.ShadowDepth="Depth3">
+        <Grid>
+            <materialDesign:Transitioner Name="Transitioner" SelectedIndex="1">
+                <StackPanel Orientation="Vertical" VerticalAlignment="Center">
+                    <ProgressBar Style="{StaticResource MaterialDesignCircularProgressBar}" 
+                                 Value="0" Width="40" IsIndeterminate="True"
+                                 VerticalAlignment="Center" Height="40" Margin="10"/>
+                    <TextBlock Text="正在保存" FontSize="20" HorizontalAlignment="Center"/>
+                </StackPanel>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Row="0"
+                                HorizontalAlignment="Left" VerticalAlignment="Top"
+                                Margin="5">
+                        <materialDesign:PackIcon Kind="CheckboxMarkedCircleOutline" Width="32" Height="32" Foreground="#FF00A024" />
+                        <TextBlock Text="保存成功" FontSize="20" VerticalAlignment="Center" Margin="5,0,5,0"/>
+                    </StackPanel>
+                    <materialDesign:PackIcon Kind="WindowClose" Width="32" Height="32" Grid.Row="0" Cursor="Hand"
+                                             VerticalAlignment="Top" HorizontalAlignment="Right" 
+                                             Margin="5" Foreground="#FFFF4D4D" MouseUp="Close_MouseUp" Background="White" />
+                    <TextBlock x:Name="succeedText" Text="文件已保存于……" FontSize="15" Grid.Row="1" Margin="10,0,10,5" />
+                    <Border BorderThickness="0,1,0,0" Margin="0" Grid.Row="2"
+                            BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                    <Grid Grid.Row="3">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="1*"/>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="1*"/>
+                        </Grid.ColumnDefinitions>
+                        <Button Style="{StaticResource MaterialDesignFlatButton}"
+                                Height="30" FontSize="15" Grid.Column="0"
+                                Click="ButtonOpen_Click">
+                            打开文件
+                        </Button>
+                        <Border BorderThickness="1,0,0,0" Margin="0" Grid.Column="1"
+                            BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                        <Button Style="{StaticResource MaterialDesignFlatButton}"
+                                Height="30" FontSize="15" Grid.Column="2"
+                                Click="ButtonOpenDir_Click">
+                            打开文件夹
+                        </Button>
+                    </Grid>
+                </Grid>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <StackPanel Orientation="Horizontal" Grid.Row="0"
+                                HorizontalAlignment="Left" VerticalAlignment="Top"
+                                Margin="5">
+                        <materialDesign:PackIcon Kind="WarningDecagramOutline" Width="32" Height="32" Foreground="Red" />
+                        <TextBlock Text="保存失败" FontSize="20" VerticalAlignment="Center" Margin="5,0,0,0"/>
+                    </StackPanel>
+                    <materialDesign:PackIcon Kind="WindowClose" Width="32" Height="32" Grid.Row="0" Cursor="Hand"
+                                             VerticalAlignment="Top" HorizontalAlignment="Right"
+                                             Margin="5" Foreground="#FFFF4D4D"  MouseUp="Close_MouseUp"/>
+                    <TextBlock Text="文件未保存。" FontSize="15" Grid.Row="1" Margin="10,0,0,5" />
+                    <Border BorderThickness="0,1,0,0" Margin="0" Grid.Row="2"
+                            BorderBrush="{DynamicResource MaterialDesignDivider}"/>
+                    <Button Style="{StaticResource MaterialDesignFlatButton}"
+                                Height="30" FontSize="15" Grid.Row="3"
+                            Click="ButtonFail_Click">
+                        查看失败原因
+                    </Button>
+                </Grid>
+            </materialDesign:Transitioner>
+        </Grid>
+    </materialDesign:Card>
+</UserControl>

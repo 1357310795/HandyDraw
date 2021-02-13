@@ -1,0 +1,14 @@
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\obj\Debug\Project1.vbprojAssemblyReference.cache
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\obj\Debug\Project1.vbproj.CoreCompileInputs.cache
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\bin\Debug\loader.exe.config
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\bin\Debug\loader.exe
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\bin\Debug\loader.pdb
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\obj\Debug\loader.exe
+C:\Users\Hikari\Documents\GitHub\UnderDev\Project1\obj\Debug\loader.pdb
+C:\Users\13573\source\repos\ppthelper11.28\Project1\bin\Debug\loader.exe.config
+C:\Users\13573\source\repos\ppthelper11.28\Project1\bin\Debug\loader.exe
+C:\Users\13573\source\repos\ppthelper11.28\Project1\bin\Debug\loader.pdb
+C:\Users\13573\source\repos\ppthelper11.28\Project1\obj\Debug\Project1.vbprojAssemblyReference.cache
+C:\Users\13573\source\repos\ppthelper11.28\Project1\obj\Debug\Project1.vbproj.CoreCompileInputs.cache
+C:\Users\13573\source\repos\ppthelper11.28\Project1\obj\Debug\loader.exe
+C:\Users\13573\source\repos\ppthelper11.28\Project1\obj\Debug\loader.pdb

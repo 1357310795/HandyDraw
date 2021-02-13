@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="UserControl1"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:TelerikWpfApp1" xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             mc:Ignorable="d" Width="200" Height="154">
+    <materialDesign:Card
+        Foreground="{DynamicResource PrimaryHueDarkBrush}"
+          Padding="16"
+          UniformCornerRadius="6">
+        <materialDesign:Card.Background>
+            <SolidColorBrush Color="White"/>
+        </materialDesign:Card.Background>
+        <StackPanel Orientation="Vertical">
+            <materialDesign:PackIcon HorizontalAlignment="Center" Grid.Row="0" 
+                                     x:Name="icon" Kind="CursorDefault" Width="80" Height="80" />
+            <TextBlock x:Name="label" VerticalAlignment="Bottom" HorizontalAlignment="Center" FontSize="24" Margin="0,12,0,0">
+                     输入工具：指针
+            </TextBlock>
+        </StackPanel>
+
+    </materialDesign:Card>
+</UserControl>

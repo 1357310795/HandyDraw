@@ -1,0 +1,44 @@
+﻿<UserControl x:Class="EraserSettingMenu"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:controls="clr-namespace:MaterialDesignExtensions.Controls;assembly=MaterialDesignExtensions"
+             mc:Ignorable="d" Height="Auto" Width="Auto" Background="White">
+    <StackPanel>
+        <materialDesign:Card
+                Grid.Row="0"
+                Background="{DynamicResource PrimaryHueMidBrush}"
+                Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}"
+                Width="100" Height="40"
+                UniformCornerRadius="6"  
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top" 
+                Margin="10,0,0,0"
+                materialDesign:ShadowAssist.ShadowDepth="Depth3" FontSize="20">
+            <TextBlock TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" FontFamily="Microsoft YaHei UI Light">
+                        擦除选项
+            </TextBlock>
+        </materialDesign:Card>
+        <StackPanel Orientation="Vertical">
+            <Button Command="{x:Static materialDesign:PopupBox.ClosePopupCommand}"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    HorizontalAlignment="Left" FontSize="20" Margin="5" Click="Button_Click">
+                按笔画擦除
+            </Button>
+            <Border BorderThickness="0,0,0,1" BorderBrush="#FFC7C7C7" Margin="10,0"/>
+            <Button Command="{x:Static materialDesign:PopupBox.ClosePopupCommand}"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    HorizontalAlignment="Left" FontSize="20" Margin="5" Click="Button_Click_1">
+                按点擦除
+            </Button>
+            <Border BorderThickness="0,0,0,1" BorderBrush="#FFC7C7C7" Margin="10,0"/>
+            <Button Command="{x:Static materialDesign:PopupBox.ClosePopupCommand}"
+                    Style="{StaticResource MaterialDesignFlatButton}"
+                    HorizontalAlignment="Left" FontSize="20" Margin="5" Click="Button_Click_2">
+                擦除全部笔迹
+            </Button>
+        </StackPanel>
+    </StackPanel>
+</UserControl>
